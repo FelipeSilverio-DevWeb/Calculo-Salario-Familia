@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="scss/index.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <h3>Salário Família</h3>
+        <div class="input-field col s12 l6">
+            <input type="number" id="ValorHora" class="validate" required>
+            <label for="ValorHora">Insira o valor do salario por hora</label>
+        </div>
+        <div class="input-field col s12 l6">
+            <input type="number" id="QtdHora" class="validate" required>
+            <label for="QtdHora">Insira a quantidade de horas trabalhadas no mês</label>
+        </div>
+        <div class="input-field col s12">
+            <input type="number" id="QtdFilhos" class="validate" required>
+            <label for="QtdFilhos">Insira a quantidade de filhos menores de 14 anos</label>
+        </div>
+        <div>
+            <button class="btn waves-effect blue darken-3" type="button" name="action" onclick=calcular()>
+                ENVIAR
+            </button>
+        </div>
+    </form>
+    <div id="modal">
+        <div id="modal-info">
+            <div>
+                <h1 id="TextoModal">teste</h1>
+            </div>
+            <div>
+                <a href="#" class="waves-effect blue darken-3 btn" onclick="VoltarModal()" id="VoltarModal">VOLTAR</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/index.js"></script>
+    <script src="js/test.js"></script>
+    
+</body>
+
+</html>
